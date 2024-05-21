@@ -1,0 +1,54 @@
+# Style
+
+The corpus can be investigated from a number of stylistical perspectives.
+
+## Vocabulary Richness
+
+The vocabulary richness of each fable was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 10 and 50.
+
+<figure>
+<iframe src="../_static/vocabulary_richness.html" width="2450px" height="1050px"></iframe>
+<figcaption>Use of Terms on a Group and Individual Level</figcaption>
+</figure>
+
+## UPOS Tags
+
+UPOS tags were tallied up in all fables without removal of any stop words or lemmatization.
+
+<figure>
+<iframe src="../_static/upos_scatter_matrix.html" width="2450px" height="1050px"></iframe>
+<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Fables</figcaption>
+</figure>
+
+<figure>
+<iframe src="../_static/upos_scatter_matrix_function.html" width="2450px" height="1050px"></iframe>
+<figcaption>Relative Frequencies of Function Word Categories</figcaption>
+</figure>
+
+<figure>
+<iframe src="../_static/upos_wave_plot.html" width="2450px" height="1050px"></iframe>
+<figcaption>Wave Plot of UPOS Tag Distributions</figcaption>
+</figure>
+
+The most frequent 2 to 4-grams of UPOS tags were also counted for each work.
+
+<figure>
+<iframe src="../_static/upos_patterns.html" width="2450px" height="1400px"></iframe>
+<figcaption>Most Frequent N-grams of UPOS tags</figcaption>
+</figure>
+
+The most frequent 4-grams of UPOS tags were also counted for each work.
+
+<figure>
+<iframe src="../_static/upos_patterns_4.html" width="2450px" height="1400px"></iframe>
+<figcaption>Most Frequent N-grams of UPOS tags</figcaption>
+</figure>
+
+## Lengths
+
+The length of fables (number of tokens), average length of tokens and mean sentence length were calculated for each work.
+
+<figure>
+<iframe src="../_static/length_scatter_matrix.html" width="2450px" height="1050px"></iframe>
+<figcaption>Lengths in all Fables per Work</figcaption>
+</figure>

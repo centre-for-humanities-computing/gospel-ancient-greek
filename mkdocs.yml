@@ -1,0 +1,26 @@
+site_name: Comparison of Gospel of Mark and Ancient Greek Fables
+nav: 
+  - Analyses: 
+    - Home: index.md
+    - Word Use and Phrases: word_use.md
+    - Stylistic Features: style.md
+
+
+theme:
+  name: material
+  navigation_depth: 1
+  palette:
+    primary: '#01034A'
+  features:
+      - toc.integrate
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.sections
+      - navigation.expand
+      - navigation.path
+      - navigation.indexes
+      - toc.follow
+      - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
