@@ -4,7 +4,7 @@ The corpus can be investigated from a number of stylistical perspectives.
 
 ## Vocabulary Richness
 
-The vocabulary richness of each fable was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 10 and 50.
+The vocabulary richness of each text was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 10 and 50.
 
 <figure>
 <iframe src="../_static/vocabulary_richness.html" width="2450px" height="1050px"></iframe>
@@ -13,11 +13,11 @@ The vocabulary richness of each fable was calculated on the lemmatized work both
 
 ## UPOS Tags
 
-UPOS tags were tallied up in all fables without removal of any stop words or lemmatization.
+UPOS tags were tallied up in all texts without removal of any stop words or lemmatization.
 
 <figure>
 <iframe src="../_static/upos_scatter_matrix.html" width="2450px" height="1050px"></iframe>
-<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Fables</figcaption>
+<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Texts</figcaption>
 </figure>
 
 <figure>
@@ -46,9 +46,9 @@ The most frequent 4-grams of UPOS tags were also counted for each work.
 
 ## Lengths
 
-The length of fables (number of tokens), average length of tokens and mean sentence length were calculated for each work.
+The length of texts (number of tokens), average length of tokens and mean sentence length were calculated for each work.
 
 <figure>
 <iframe src="../_static/length_scatter_matrix.html" width="2450px" height="1050px"></iframe>
-<figcaption>Lengths in all Fables per Work</figcaption>
+<figcaption>Lengths in all texts per Work</figcaption>
 </figure>
