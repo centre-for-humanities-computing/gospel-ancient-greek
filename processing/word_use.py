@@ -23,9 +23,9 @@ def load_works() -> list[dict]:
         files = glob.glob(str(work.joinpath("*.spacy")))
         files = map(Path, files)
         for file in files:
-            fable_name = file.stem
+            text_name = file.stem
             doc = Doc(nlp.vocab).from_disk(file)
-            records.append(dict(work_id=work_id, fable_name=fable_name, doc=doc))
+            records.append(dict(work_id=work_id, text_name=text_name, doc=doc))
     return records
 
 
@@ -93,7 +93,7 @@ dtm = vectorizer.fit_transform(lemmatized_text)
 tf_idf = TfidfTransformer().fit_transform(dtm)
 vocab = vectorizer.get_feature_names_out()
 
-print("Calculating top words in works and fables.")
+print("Calculating top words in works and texts.")
 top_weighted_per_class = top_ctf_idf(data["work_id"], dtm, vocab)
 top_freq_per_class = top_freq_group(data["work_id"], dtm, vocab)
 data["top_frequency"] = top_words(dtm, vocab)

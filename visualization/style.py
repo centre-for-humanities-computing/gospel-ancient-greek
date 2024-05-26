@@ -24,8 +24,10 @@ def find_work(work_id: str, md: pd.DataFrame) -> str:
 
 data = pd.read_csv("results/stylistic_features.csv")
 md = fetch_metadata(SHEET_URL)
-data["fable"] = data["fable_name"].map(lambda s: s.split(" - ")[1])
-data["work"] = data["work_id"].map(lambda id: find_work(id, md))
+#data["text"] = data["text_name"].map(lambda s: s.split(" - ")[1])
+data["text"] = data["text_name"]
+#data["work"] = data["work_id"].map(lambda id: find_work(id, md))
+data["work"] = data["work_id"]
 
 out_path = Path("docs/_static/vocabulary_richness.html")
 out_path.parent.mkdir(exist_ok=True, parents=True)
@@ -45,7 +47,7 @@ for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50"]):
             legendgroup=work,
             showlegend=row == 1,
             boxpoints="all",
-            text=subset["fable"],
+            text=subset["text"],
             hovertemplate="<b>%{text}",
             marker=dict(color=color),
         )
@@ -57,7 +59,7 @@ fig.write_html(out_path)
 fig = px.scatter_matrix(
     data,
     dimensions=["length", "mean_sentence_length", "mean_token_length", "n_sentences"],
-    hover_name="fable_name",
+    hover_name="text_name",
     color="work",
 )
 out_path = Path("docs/_static/length_scatter_matrix.html")

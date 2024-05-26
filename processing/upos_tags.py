@@ -20,9 +20,9 @@ def load_works() -> list[dict]:
         files = glob.glob(str(work.joinpath("*.spacy")))
         files = map(Path, files)
         for file in files:
-            fable_name = file.stem
+            text_name = file.stem
             doc = Doc(nlp.vocab).from_disk(file)
-            records.append(dict(work_id=work_id, fable_name=fable_name, doc=doc))
+            records.append(dict(work_id=work_id, text_name=text_name, doc=doc))
     return records
 
 
@@ -69,7 +69,7 @@ upos_vocab = vectorizer.get_feature_names_out()
 
 print("Saving UPOS frequencies")
 freq_df = pd.DataFrame(upos_vecs, columns=upos_vocab)
-freq_df["fable_name"] = data["fable_name"]
+freq_df["text_name"] = data["text_name"]
 freq_df["work_id"] = data["work_id"]
 freq_df.to_csv(out_path)
 

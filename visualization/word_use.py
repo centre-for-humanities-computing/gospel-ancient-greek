@@ -22,8 +22,10 @@ def find_work(work_id: str, md: pd.DataFrame) -> str:
 
 data = pd.read_csv("results/word_use.csv")
 md = fetch_metadata(SHEET_URL)
-data["fable"] = data["fable_name"].map(lambda s: s.split(" - ")[1])
-data["work"] = data["work_id"].map(lambda id: find_work(id, md))
+#data["text"] = data["text_name"].map(lambda s: s.split(" - ")[1])
+data["text"] = data["text_name"]
+#data["work"] = data["work_id"].map(lambda id: find_work(id, md))
+data["work"] = data["work_id"]
 data["group"] = (
     data["work"]
     + " <br> <b>top c-tf-idf</b>: <i>"
@@ -40,16 +42,16 @@ fig = px.scatter(
     x="x_umap",
     y="y_umap",
     color="group",
-    text="fable",
+    text="text",
     hover_data={
         "top_tf-idf": True,
         "top_frequency": True,
         "x_umap": False,
         "y_umap": False,
         "group": False,
-        "fable": False,
+        "text": False,
     },
-    hover_name="fable_name",
+    hover_name="text_name",
     template="plotly_white",
     height=1200,
     width=1000,

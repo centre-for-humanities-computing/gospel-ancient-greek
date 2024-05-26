@@ -20,14 +20,16 @@ def iterate_fables(file_path: Path) -> Iterable[tuple[str, str]]:
 out_path = Path("data/spacy_objects")
 out_path.mkdir(exist_ok=True, parents=True)
 
-files = glob("data/raw/*.txt")
+files = glob("data/raw_single_file/*/*.txt")
 files = [Path(file) for file in files]
-for file in tqdm(files, desc="Going through all fables."):
+for file in tqdm(files, desc="Going through all texts."):
     file_id = file.stem
-    current_folder = out_path.joinpath(file_id)
-    current_folder.mkdir(exist_ok=True, parents=True)
-    for fable_name, fable_content in iterate_fables(file):
-        out_file_path = current_folder.joinpath(f"{fable_name}.spacy")
-        if not out_file_path.is_file():
-            doc = nlp(fable_content)
-            doc.to_disk(out_file_path)
+    out_file_path = out_path.joinpath(f"{file_id}.spacy")
+    with open(file) as in_file:
+        doc_content = in_file.read()
+        if len(doc_content) < 1000000:
+            if not out_file_path.is_file():
+                doc = nlp(doc_content)
+                doc.to_disk(out_file_path)
+        else:
+            print(f"File {file} is too large.")

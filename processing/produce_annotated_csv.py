@@ -18,9 +18,9 @@ def load_works() -> list[dict]:
         files = glob.glob(str(work.joinpath("*.spacy")))
         files = map(Path, files)
         for file in files:
-            fable_name = file.stem
+            text_name = file.stem
             doc = Doc(nlp.vocab).from_disk(file)
-            records.append(dict(work_id=work_id, fable_name=fable_name, doc=doc))
+            records.append(dict(work_id=work_id, text_name=text_name, doc=doc))
     return records
 
 
@@ -40,14 +40,14 @@ out_path = Path("annotations")
 out_path.mkdir(exist_ok=True)
 
 print("Loading data.")
-fables = load_works()
+texts = load_works()
 
-print("Exporting fable annotations as csv.")
-for fable in fables:
-    work_id = fable["work_id"]
-    fable_name = fable["fable_name"]
-    doc = fable["doc"]
-    out_file = out_path.joinpath(f"{work_id}__{fable_name}.csv")
+print("Exporting text annotations as csv.")
+for text in texts:
+    work_id = text["work_id"]
+    text_name = text["text_name"]
+    doc = text["doc"]
+    out_file = out_path.joinpath(f"{work_id}__{text_name}.csv")
     entries = [get_token_features(token) for token in doc]
     table = pd.DataFrame.from_records(entries)
     table.to_csv(out_file)

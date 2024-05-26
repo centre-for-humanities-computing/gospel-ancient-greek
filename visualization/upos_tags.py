@@ -33,7 +33,7 @@ def wrap_text(text: str) -> str:
 print("Producing Patterns heatmap (2-4).")
 data = pd.read_csv("results/upos_patterns.csv", index_col=0)
 md = fetch_metadata(SHEET_URL)
-data.columns = [find_work(work_id, md) for work_id in data.columns]
+#data.columns = [find_work(work_id, md) for work_id in data.columns]
 rel_freq = data.applymap(lambda elem: literal_eval(elem)[2])
 counts = data.applymap(lambda elem: literal_eval(elem)[1])
 data = data.applymap(lambda elem: literal_eval(elem)[0])
@@ -63,7 +63,7 @@ fig.write_html(out_path)
 print("Producing Patterns heatmap (4).")
 data = pd.read_csv("results/upos_patterns_4.csv", index_col=0)
 md = fetch_metadata(SHEET_URL)
-data.columns = [find_work(work_id, md) for work_id in data.columns]
+#data.columns = [find_work(work_id, md) for work_id in data.columns]
 rel_freq = data.applymap(lambda elem: literal_eval(elem)[2])
 counts = data.applymap(lambda elem: literal_eval(elem)[1])
 data = data.applymap(lambda elem: literal_eval(elem)[0])
@@ -92,8 +92,9 @@ fig.write_html(out_path)
 
 print("Producing UPOS frequency visualizations.")
 data = pd.read_csv("results/upos_tags.csv", index_col=0)
-data["work_name"] = data["work_id"].map(partial(find_work, md=md))
-data = data.set_index(["work_name", "fable_name"]).drop(columns=["work_id"])
+#data["work_name"] = data["work_id"].map(partial(find_work, md=md))
+data["work_name"] = data["work_id"]
+data = data.set_index(["work_name", "text_name"]).drop(columns=["work_id"])
 freq = data.to_numpy()
 rel_freq = pd.DataFrame(
     (freq.T / freq.sum(axis=1)).T, columns=data.columns, index=data.index
@@ -102,7 +103,7 @@ rel_freq = pd.DataFrame(
 fig = px.scatter_matrix(
     rel_freq.reset_index(),
     dimensions=["noun", "adj", "verb", "aux"],
-    hover_name="fable_name",
+    hover_name="text_name",
     color="work_name",
 )
 fig.update_layout(legend=dict(
@@ -118,7 +119,7 @@ fig = px.scatter_matrix(
     rel_freq.reset_index(),
     dimensions=["adp", "adv", "cconj", "det", "part", "sconj"],
     # dimensions=set(rel_freq.columns) - set(["noun", "adj", "verb", "propn", "num", "aux"]),
-    hover_name="fable_name",
+    hover_name="text_name",
     color="work_name",
 )
 fig.update_layout(legend=dict(
@@ -138,7 +139,7 @@ rel_freq = rel_freq[tag_order]
 rel_freq = rel_freq.sort_index(level="work_name")
 fig = go.Figure()
 legendgroups = set()
-for (work_name, fable_name), data in rel_freq.iterrows():
+for (work_name, text_name), data in rel_freq.iterrows():
     fig.add_trace(
         go.Scatter(
             name=work_name if work_name not in legendgroups else "",
