@@ -60,7 +60,7 @@ def ttr(tokens: list[str]) -> float:
 def vocabulary_richness(doc: Doc) -> dict[str, float]:
     lemmata = [token.lemma_ for token in doc]
     return dict(
-        mattr_10=mattr(lemmata, 10), mattr_50=mattr(lemmata, 50), ttr=ttr(lemmata)
+        mattr_10=mattr(lemmata, 10), mattr_50=mattr(lemmata, 50), ttr=ttr(lemmata), mattr_500=mattr(lemmata, 500)
     )
 
 

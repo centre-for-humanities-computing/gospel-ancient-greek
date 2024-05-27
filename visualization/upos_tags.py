@@ -164,9 +164,35 @@ fig.add_trace(
         opacity=1,
     )
 )
+jewish_texts = rel_freq.index.get_level_values("work_name").str.contains("jewish_texts|gospel")
+jewish_rel_freq = rel_freq.loc[jewish_texts]
+fig.add_trace(
+    go.Scatter(
+        name="Average across Jewish texts (incl. all gospels)",
+        marker=dict(color="blue"),
+        line=dict(width=5),
+        x=tag_order,
+        y=np.mean(jewish_rel_freq, axis=0),
+        mode="lines",
+        opacity=1,
+    )
+)
+greek_texts = rel_freq.index.get_level_values("work_name").str.contains("greek_biographies|greek_histeriographies|greek_novels")
+greek_rel_freq = rel_freq.loc[greek_texts]
+fig.add_trace(
+    go.Scatter(
+        name="Average across Greek texts (excl. all tragedies)",
+        marker=dict(color="green"),
+        line=dict(width=5),
+        x=tag_order,
+        y=np.mean(greek_rel_freq, axis=0),
+        mode="lines",
+        opacity=1,
+    )
+)
 
 fig.update_layout(legend=dict(
-    y=-0.4,
+    y=-0.7,
     xanchor="left",
     x=0
 ))

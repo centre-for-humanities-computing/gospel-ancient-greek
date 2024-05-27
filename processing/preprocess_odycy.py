@@ -6,6 +6,7 @@ import spacy
 from tqdm import tqdm
 
 nlp = spacy.load("grc_odycy_joint_trf")
+nlp.max_length = 2100000  # Increase max_length to 2 million
 
 
 def iterate_fables(file_path: Path) -> Iterable[tuple[str, str]]:
@@ -27,7 +28,7 @@ for file in tqdm(files, desc="Going through all texts."):
     out_file_path = out_path.joinpath(f"{file_id}.spacy")
     with open(file) as in_file:
         doc_content = in_file.read()
-        if len(doc_content) < 1000000:
+        if len(doc_content) < 2100000:
             if not out_file_path.is_file():
                 doc = nlp(doc_content)
                 doc.to_disk(out_file_path)

@@ -32,12 +32,12 @@ data["work"] = data["work_id"]
 out_path = Path("docs/_static/vocabulary_richness.html")
 out_path.parent.mkdir(exist_ok=True, parents=True)
 fig = make_subplots(
-    rows=3, cols=1, subplot_titles=["Overall TTR", "MATTR-10", "MATTR-50"]
+    rows=4, cols=1, subplot_titles=["Overall TTR", "MATTR-10", "MATTR-50", "MATTR-500"]
 )
 unique_works = data["work"].unique()
 colors = px.colors.qualitative.Pastel
 work_to_color = dict(zip(unique_works, colors))
-for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50"]):
+for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50", "mattr_500"]):
     row = i_feature + 1
     for work, color in work_to_color.items():
         subset = data[data["work"] == work]
