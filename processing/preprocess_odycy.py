@@ -26,11 +26,11 @@ files = [Path(file) for file in files]
 for file in tqdm(files, desc="Going through all texts."):
     file_id = file.stem
     out_file_path = out_path.joinpath(f"{file_id}.spacy")
-    with open(file) as in_file:
-        doc_content = in_file.read()
-        if len(doc_content) < 2100000:
-            if not out_file_path.is_file():
+    if not out_file_path.is_file():
+        with open(file) as in_file:
+            doc_content = in_file.read()
+            if len(doc_content) < 2100000:
                 doc = nlp(doc_content)
                 doc.to_disk(out_file_path)
-        else:
-            print(f"File {file} is too large.")
+            else:
+                print(f"File {file} is too large.")
