@@ -12,6 +12,8 @@
         <link rel="prev" href="../word_use/">
       
       
+        <link rel="next" href="../more_info/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
@@ -246,6 +248,8 @@
       
         
       
+        
+      
     
     
       
@@ -366,9 +370,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vocabulary-richness" class="md-nav__link">
+  <a href="#vocabulary-richness-all-words" class="md-nav__link">
     <span class="md-ellipsis">
-      Vocabulary Richness
+      Vocabulary Richness (All Words)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vocabulary-richness-noun-adj-verb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vocabulary Richness (Noun, Adj, Verb)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vocabulary-richness-others" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vocabulary Richness (Others)
     </span>
   </a>
   
@@ -401,6 +423,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more_info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -425,10 +468,25 @@
 
 <h1 id="style">Style</h1>
 <p>The corpus can be investigated from a number of stylistical perspectives.</p>
-<h2 id="vocabulary-richness">Vocabulary Richness</h2>
-<p>The vocabulary richness of each text was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 10 and 50.</p>
+<h2 id="vocabulary-richness-all-words">Vocabulary Richness (All Words)</h2>
+<p>The vocabulary richness of each text was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 10, 50, 500, and 1000.</p>
 <figure>
 <iframe src="../_static/vocabulary_richness.html" width="2450px" height="1050px"></iframe>
+<figcaption>Use of Terms on a Group and Individual Level</figcaption>
+</figure>
+
+<h2 id="vocabulary-richness-noun-adj-verb">Vocabulary Richness (Noun, Adj, Verb)</h2>
+<p>The vocabulary richness of each fable was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 500 and 1000.</p>
+<figure>
+<iframe src="../_static/vocabulary_richness_noun_adj_verb.html" width="2450px" height="1050px"></iframe>
+<figcaption>Use of Terms on a Group and Individual Level</figcaption>
+</figure>
+
+<h2 id="vocabulary-richness-others">Vocabulary Richness (Others)</h2>
+<p>The vocabulary richness of each fable was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 500 and 1000. POS-tags used were
+ADV, INTJ, ADP, CCONJ, SCONJ, DET, PART, and PRON.</p>
+<figure>
+<iframe src="../_static/vocabulary_richness_adv_intj_adp_cconj_sconj_det_part_pron.html" width="2450px" height="1050px"></iframe>
 <figcaption>Use of Terms on a Group and Individual Level</figcaption>
 </figure>
 
@@ -440,8 +498,23 @@
 </figure>
 
 <figure>
+<iframe src="../_static/upos_scatter_matrix_3d.html" width="2450px" height="1050px"></iframe>
+<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Fables (3D) </figcaption>
+</figure>
+
+<figure>
 <iframe src="../_static/upos_scatter_matrix_function.html" width="2450px" height="1050px"></iframe>
 <figcaption>Relative Frequencies of Function Word Categories</figcaption>
+</figure>
+
+<figure>
+<iframe src="../_static/upos_scatter_matrix_function_3d_1.html" width="2450px" height="1050px"></iframe>
+<figcaption>Relative Frequencies of Function Word Categories (Cconj, Sconj, Adv)</figcaption>
+</figure>
+
+<figure>
+<iframe src="../_static/upos_scatter_matrix_function_3d_2.html" width="2450px" height="1050px"></iframe>
+<figcaption>Relative Frequencies of Function Word Categories (Adv, Det, Part)</figcaption>
 </figure>
 
 <figure>
@@ -449,15 +522,21 @@
 <figcaption>Wave Plot of UPOS Tag Distributions</figcaption>
 </figure>
 
-<p>The most frequent 2 to 4-grams of UPOS tags were also counted for each work.</p>
+<p>The most frequent 3-grams of UPOS tags were also counted for each work.</p>
 <figure>
-<iframe src="../_static/upos_patterns.html" width="2450px" height="1400px"></iframe>
+<iframe src="../_static/upos_patterns_3.html" width="2450px" height="1400px"></iframe>
 <figcaption>Most Frequent N-grams of UPOS tags</figcaption>
 </figure>
 
-<p>The most frequent 4-grams of UPOS tags were also counted for each work.</p>
+<p>The most frequent 5-grams of UPOS tags were also counted for each work.</p>
 <figure>
-<iframe src="../_static/upos_patterns_4.html" width="2450px" height="1400px"></iframe>
+<iframe src="../_static/upos_patterns_5.html" width="2450px" height="1400px"></iframe>
+<figcaption>Most Frequent N-grams of UPOS tags</figcaption>
+</figure>
+
+<p>The most frequent 7-grams of UPOS tags were also counted for each work.</p>
+<figure>
+<iframe src="../_static/upos_patterns_7.html" width="2450px" height="1400px"></iframe>
 <figcaption>Most Frequent N-grams of UPOS tags</figcaption>
 </figure>
 
