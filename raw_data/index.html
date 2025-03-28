@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#raw-data-files" class="md-skip">
+        <a href="#macro-rendering-error" class="md-skip">
           Skip to content
         </a>
       
@@ -355,18 +355,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    More Info
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -377,43 +365,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#word-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Word use
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#phrases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Phrases
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -443,15 +394,26 @@
 
 
 
-<h1 id="raw-data-files">Raw Data Files</h1>
-<p>Here are the CSV files used for the plots on the site.</p>
-<h2 id="word-use">Word use</h2>
-<div>
-<!-- Include the HTML table here -->
-{% include "../results/word_use.html" %}
-</div>
+<h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
+<p><em>File</em>: <code>raw_data.md</code></p>
+<p><em>TemplateNotFound</em>: ../results/word_use.html</p>
+<pre><code>Traceback (most recent call last):
+  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/mkdocs_macros/plugin.py&quot;, line 688, in render
+    return md_template.render(**page_variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 1295, in render
+    self.environment.handle_exception()
+  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File &quot;&lt;template&gt;&quot;, line 8, in top-level template code
+  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 197, in get_source
+    pieces = split_template_path(template)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 36, in split_template_path
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ../results/word_use.html
 
-<h2 id="phrases">Phrases</h2>
+</code></pre>
 
 
 
