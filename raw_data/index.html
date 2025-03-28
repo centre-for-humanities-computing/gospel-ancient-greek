@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#raw-data-files" class="md-skip">
           Skip to content
         </a>
       
@@ -355,6 +355,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    More Info
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -365,6 +377,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#word-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#word-use_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phrases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phrases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -394,26 +452,2976 @@
 
 
 
-<h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
-<p><em>File</em>: <code>raw_data.md</code></p>
-<p><em>TemplateNotFound</em>: ../results/word_use.html</p>
-<pre><code>Traceback (most recent call last):
-  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/mkdocs_macros/plugin.py&quot;, line 688, in render
-    return md_template.render(**page_variables)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 1295, in render
-    self.environment.handle_exception()
-  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 13, in top-level template code
-  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 197, in get_source
-    pieces = split_template_path(template)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/work/gospel-ancient-greek/env/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 36, in split_template_path
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: ../results/word_use.html
+<h1 id="raw-data-files">Raw Data Files</h1>
+<p>Here are the CSV files used for the plots on the site.</p>
+<h2 id="word-use">Word use</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>work_id</th>
+      <th>text_name</th>
+      <th>top_frequency</th>
+      <th>top_frequency_in_work</th>
+      <th>top_tf-idf</th>
+      <th>top_ctf-idf</th>
+      <th>x_umap</th>
+      <th>y_umap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>greek_histeriographies</td>
+      <td>Cassius Dio - Historiae Romanae</td>
+      <td>και δέ μεν των την</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και μεν δέ των ες</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>1.971380</td>
+      <td>8.251590</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>greek_histeriographies</td>
+      <td>Diodorus Siculus - Bibliotheca Historica</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ των την μεν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.228156</td>
+      <td>9.609807</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Constitution of the</td>
+      <td>και δέ μεν των αν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ μεν των αν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.565268</td>
+      <td>8.392674</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>greek_histeriographies</td>
+      <td>Flavius Josephus - The Jewish War - De b</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ των την το</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>2.908830</td>
+      <td>9.804138</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>greek_histeriographies</td>
+      <td>Herodotus - The Histories</td>
+      <td>δέ και ες οι των</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ ες οι των</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.773692</td>
+      <td>8.171591</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Cyropaedia</td>
+      <td>και δέ μεν των οι</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ κυρος μεν εφη</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.276847</td>
+      <td>8.256951</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>greek_histeriographies</td>
+      <td>Polybius - Histories</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και των δέ την μεν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.084472</td>
+      <td>9.645701</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Anabasis</td>
+      <td>και δέ οι μεν των</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ οι μεν των</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.470453</td>
+      <td>8.539720</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>greek_histeriographies</td>
+      <td>Dionysius of Halicarnassus - Antiquitate</td>
+      <td>και των δέ την τη</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και των δέ την τη</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.136983</td>
+      <td>9.054674</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>greek_histeriographies</td>
+      <td>Thucydides - The Peloponnesian War</td>
+      <td>και δέ των οι την</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ ες των οι</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>1.097606</td>
+      <td>7.996009</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Testament of Job - Greek</td>
+      <td>και εν δέ την των</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εν ιωβ δέ την</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.899932</td>
+      <td>7.885679</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Testament of Abraham Recensi</td>
+      <td>και δέ αβρααμ την τη</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και αβρααμ αρχιστρατηγος δέ ισαακ</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.737897</td>
+      <td>7.697141</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Job</td>
+      <td>δέ και ου αυτου εν</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>δέ και ου αυτου ιωβ</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>0.569268</td>
+      <td>9.315145</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Tobias</td>
+      <td>και τη εν το αυτου</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ειπεν ραγουηλ ελεημοσυνη τη</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.815462</td>
+      <td>7.408936</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Jonas</td>
+      <td>και προς ιωνας την εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ιωνας νινευη κυριος προς</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.736570</td>
+      <td>7.364695</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Ruth</td>
+      <td>και ειπεν την αυτη εν</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και νωεμειν ειπεν βος πενθερα</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.852927</td>
+      <td>7.487990</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Joseph and Aseneth - Greek</td>
+      <td>και την τη αυτου εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ιωσηφ ασενεθ ασενθ φαραω</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.485124</td>
+      <td>7.366481</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Judith</td>
+      <td>και εν αυτων τη εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εν αυτων ισραηλ τη</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.737822</td>
+      <td>7.261405</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Esther</td>
+      <td>και εν τη δέ την</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εσθηρ αμαν μαρδοχαιος εν</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>2.168346</td>
+      <td>7.787876</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Prometheus Bound</td>
+      <td>και δʼ προμηθευς δέ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>προμηθευς και δʼ χορος ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.054860</td>
+      <td>7.084911</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Ichneutae</td>
+      <td>χορος και δʼ κυλληνη ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κυλληνη σιληνος χορος ημιχ και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-1.841074</td>
+      <td>7.123338</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Ion</td>
+      <td>δʼ ιων κρεουσα και ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κρεουσα ιων δʼ ξουθος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.557858</td>
+      <td>6.893657</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Heracleidae</td>
+      <td>ου και δʼ γαρ δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιολαος ου και δʼ γαρ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.211690</td>
+      <td>7.059419</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Electra</td>
+      <td>ηλεκτρα ου και γαρ δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ηλεκτρα ορεστης χρυσοθεμις ου και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.505439</td>
+      <td>7.910195</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Helen</td>
+      <td>δʼ ελενη δέ και ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ελενη μενελεως θεοκλυμενος δʼ δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.685262</td>
+      <td>7.090357</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Iphigenia in Tauris</td>
+      <td>δʼ ιφιγενεια και ορεστης ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιφιγενεια ορεστης δʼ και τʼ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.758184</td>
+      <td>7.690047</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Persians</td>
+      <td>δʼ και χορος δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος ξερξης δʼ και ατοσσα</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.713311</td>
+      <td>6.534083</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Orestes</td>
+      <td>ορεστης δʼ και γαρ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ορεστης ηλεκτρα μενελαος δʼ πυλαδης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.472203</td>
+      <td>7.821230</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Ajax</td>
+      <td>και γαρ ου δʼ αν</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>τεκμησσα αιας τευκρος και δʼ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.489811</td>
+      <td>6.759582</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Elektra</td>
+      <td>δʼ ηλεκτρα ορεστης και δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ηλεκτρα ορεστης δʼ και δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.653838</td>
+      <td>7.914687</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Herakles</td>
+      <td>δʼ και ου δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αμφιτρυων ηρακλης δʼ και θησευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.337785</td>
+      <td>7.348131</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Antigone</td>
+      <td>και δʼ γαρ ου κρεων</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κρεων και αντιγονη δʼ χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.893161</td>
+      <td>6.878755</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Eumenides</td>
+      <td>και δʼ χορος δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος και δʼ ορεστης δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.525463</td>
+      <td>7.203488</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Iphigenia in Aulis</td>
+      <td>δʼ και δέ ου κλυταιμηστρα</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κλυταιμηστρα αγαμεμνων δʼ ιφιγενεια αχιλλευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.647382</td>
+      <td>7.344020</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Medea</td>
+      <td>και ου γαρ μηδεια δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>μηδεια και αιγευς ου γαρ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.402372</td>
+      <td>7.997343</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Trojan Women</td>
+      <td>δʼ και ου δέ εκαβη</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>εκαβη δʼ ανδρομαχη ταλθυβιος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.456320</td>
+      <td>6.630803</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Andromache</td>
+      <td>και ου δέ γαρ ως</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ανδρομαχη και πηλευς ερμιονη ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.710322</td>
+      <td>7.840944</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Suppliant Maidens</td>
+      <td>δʼ χορος και δέ βασιλευς</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος δʼ και δαναος βασιλευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.084210</td>
+      <td>6.643611</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Rhesus</td>
+      <td>δʼ και ου εκτωρ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>εκτωρ δʼ και χορος ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.593588</td>
+      <td>6.519217</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Libation Bearers</td>
+      <td>δʼ και χορος ορεστης δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ορεστης χορος δʼ ηλεκτρα και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.592932</td>
+      <td>7.742251</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Suppliants</td>
+      <td>δʼ και γαρ ου δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αδραστος θησευς δʼ και χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.401602</td>
+      <td>7.289791</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Philoctetes</td>
+      <td>νεοπτολεμος και ου φιλοκτητης δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>φιλοκτητης νεοπτολεμος οδυσσευς μʼ και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.347982</td>
+      <td>6.891404</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Oedipus at Colonus</td>
+      <td>οιδιπους και δʼ ου γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>οιδιπους αντιγονη δʼ χορος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.189797</td>
+      <td>7.072229</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Seven Against Thebes</td>
+      <td>δʼ και χορος πολις δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δʼ ετεοκλης χορος αντιγονη και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.997164</td>
+      <td>6.743244</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Bacchae</td>
+      <td>δʼ δέ και διονυσος ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>πενθευς διονυσος αγαυη δʼ καδμος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.215430</td>
+      <td>6.842129</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Oedipus King - Oedipus Tyran</td>
+      <td>οιδιπους και ου γαρ δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>οιδιπους κρεων και δʼ ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.189798</td>
+      <td>7.124920</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Hippolytus</td>
+      <td>ου και γαρ δέ ιππολυτος</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιππολυτος φαιδρα θησευς ου και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.643332</td>
+      <td>7.900507</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Cyclops</td>
+      <td>κυκλωψ οδυσσευς και ου χορος</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κυκλωψ οδυσσευς σιληνος χορος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-1.537344</td>
+      <td>7.259126</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Phoenician Women</td>
+      <td>δʼ και δέ ου γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αντιγονη δʼ πολυνεικης κρεων ετεοκλης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.094698</td>
+      <td>6.993044</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Trachiniae</td>
+      <td>και δʼ ου γαρ ως</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δηιανειρα υλλος λιχας δʼ ηρακλης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.017552</td>
+      <td>6.783137</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Alcestis</td>
+      <td>και ου αδμητος γαρ δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αδμητος ηρακλης και ου χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.906805</td>
+      <td>7.767218</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Agamemnon</td>
+      <td>δʼ και χορος δέ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δʼ χορος και κλυταιμηστρα κασανδρα</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.351370</td>
+      <td>6.856865</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>greek_novels</td>
+      <td>Xenophon of Ephesus - Ephesiaca</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και ανθεια δέ αβροκομης την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.785381</td>
+      <td>9.246032</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>greek_novels</td>
+      <td>Chariton - De Chaerea et Callirhoe - Cha</td>
+      <td>και δέ την γαρ μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ καλλιρροη την γαρ</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.808147</td>
+      <td>8.973928</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>greek_novels</td>
+      <td>Longus - Daphnis and Chloe</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δαφνις χλοη δέ την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>1.917916</td>
+      <td>8.355626</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>greek_novels</td>
+      <td>Vitae Aesopi - Vita Aesopi Pl vel Accurs</td>
+      <td>και δέ την αισωπος των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και αισωπος ξανθος δέ την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>2.372628</td>
+      <td>8.448527</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>greek_novels</td>
+      <td>Heliodorus of Emesa - Aethiopica</td>
+      <td>και δέ την το μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ την χαρικλεια το</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>1.469301</td>
+      <td>8.046231</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>greek_novels</td>
+      <td>Achilles Tatius - Leucippe et Clitophon</td>
+      <td>και δέ την το μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ την το λευκιππη</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.470567</td>
+      <td>9.055362</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pompey</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ πομπηιος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.631492</td>
+      <td>10.505160</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Alcibiades</td>
+      <td>και δέ των την αλκιβιαδης</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αλκιβιαδης δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.752102</td>
+      <td>8.113016</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Sertorius</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ σερτωριος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.367721</td>
+      <td>10.538901</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lycurgus</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των την το</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.689690</td>
+      <td>9.067501</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Demosthenes and Cicero</td>
+      <td>και δέ μεν των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κικερων δημοσθενης δέ μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.117428</td>
+      <td>9.941002</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>greek_biographies</td>
+      <td>Soranus - Vita Hippocratis Secundum Soranum</td>
+      <td>και δέ το την εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ το ςωρανος την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.988979</td>
+      <td>9.279234</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Philopoemen</td>
+      <td>και δέ των την τους</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των φιλοποιμην την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.465224</td>
+      <td>9.572331</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pyrrhus</td>
+      <td>και δέ των την πυρρος</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και πυρρος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.102298</td>
+      <td>9.718687</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lycurgus and Numa</td>
+      <td>και δέ το των την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ το των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.939250</td>
+      <td>8.541154</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Demetrius and Antony</td>
+      <td>και δέ την μεν εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αντωνιος δημητριος δέ την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.377482</td>
+      <td>10.025807</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Romulus</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ ρωμυλος μεν την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.796548</td>
+      <td>8.800714</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>greek_biographies</td>
+      <td>Porphyry - Life of Pythagoras - Vita Pythagorae</td>
+      <td>και δέ των δʼ την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των δʼ πυθαγορας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.874249</td>
+      <td>8.840469</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Solon</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και σολων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.752228</td>
+      <td>9.020075</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Agesilaus</td>
+      <td>και δέ την των τη</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αγησιλαος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.376034</td>
+      <td>11.087979</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Demosthenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δημοσθενης δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.549344</td>
+      <td>8.803561</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Agesilaus and Pompey</td>
+      <td>και δέ μεν την ου</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αγησιλαος δέ πομπηιος μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.209841</td>
+      <td>10.994439</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Alexander</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των αλεξανδρος την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.858573</td>
+      <td>9.629587</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Artaxerxes</td>
+      <td>και δέ την μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κυρος την αρτοξερξης</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.619814</td>
+      <td>8.797957</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Publicola</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των την ποπλικολας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.360069</td>
+      <td>9.120136</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Tiberius and Caius Gracchus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ τιβεριος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.122164</td>
+      <td>8.901933</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Marcus Cato _Maior_</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κατων των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.917723</td>
+      <td>9.860676</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caius Marcius Coriolanus</td>
+      <td>και δέ την των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και μαρκιος δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.774165</td>
+      <td>8.400793</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Alcibiades and Coriolanus</td>
+      <td>και δέ ου την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αλκιβιαδης δέ ου μαρκιος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.684070</td>
+      <td>8.052103</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Demetrius</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ δημητριος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.094119</td>
+      <td>9.545431</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>greek_biographies</td>
+      <td>Flavius Josephus - Life</td>
+      <td>και την δέ των εις</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και την δέ των ιωναθης</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.185554</td>
+      <td>10.005625</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lysander</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και λυσανδρος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.785949</td>
+      <td>10.888791</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Crassus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κρασσος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.396991</td>
+      <td>10.713048</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Numa</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.491654</td>
+      <td>8.925432</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Solon and Publicola</td>
+      <td>και δέ μεν των σολων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και σολων ποπλικολας δέ μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.850754</td>
+      <td>9.087798</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Camillus</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των καμιλλος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.873926</td>
+      <td>9.296648</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lucullus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και λουκουλλος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.515238</td>
+      <td>8.969564</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Timoleon</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και τιμολεων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.654553</td>
+      <td>9.456851</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Brutus</td>
+      <td>και δέ των μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και βρουτος δέ κασσιος των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.895313</td>
+      <td>10.196450</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Phocion</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φωκιων δέ φωκιοι την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.374973</td>
+      <td>9.143312</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Nicias and Crassus</td>
+      <td>και δέ την ου το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κρασσος δέ την νικιας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.330702</td>
+      <td>10.656568</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Marcellus</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μαρκελλος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.534426</td>
+      <td>9.410298</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Otho</td>
+      <td>και δέ των τους την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ οθων των τους</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.710037</td>
+      <td>9.327409</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Aemilius Paulus</td>
+      <td>και δέ την των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των αιμιλιος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.651573</td>
+      <td>9.773231</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lucullus and Cimon</td>
+      <td>και των μεν δέ την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κιμων λουκουλλος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.647188</td>
+      <td>8.783853</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Galba</td>
+      <td>και δέ την των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ γαλβας νερων την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.852372</td>
+      <td>10.474126</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Pericles and Fabius Maximus</td>
+      <td>και δέ φαβιος ου των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φαβιος περικλης περικλεους δέ</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.992214</td>
+      <td>8.433226</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lysander and Sulla</td>
+      <td>και δέ την μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ λυσανδρος συλλας την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.765826</td>
+      <td>10.790769</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Theseus</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την μεν των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.384502</td>
+      <td>8.873258</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cimon</td>
+      <td>και δέ των την κιμων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κιμων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.666044</td>
+      <td>8.783344</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>greek_biographies</td>
+      <td>Philo Judaeus - De vita Mosis _lib i-ii_</td>
+      <td>και των δέ την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και των δέ την μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.112536</td>
+      <td>8.078064</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pericles</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ περικλης των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.413101</td>
+      <td>8.516382</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Aratus</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αρατος δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.019628</td>
+      <td>9.273533</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Sertorius and Eumenes</td>
+      <td>και δέ μεν τω το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μεν τω την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.439680</td>
+      <td>10.252298</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caius Marius</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μαριος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.620123</td>
+      <td>10.390590</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Nicias</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και νικιας δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.076368</td>
+      <td>8.181615</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Titus Flamininus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ τιτος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.327180</td>
+      <td>9.363402</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Philopoemen and Titus</td>
+      <td>και δέ μεν προς ελλην</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και τιτος δέ φιλοποιμενος μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.426017</td>
+      <td>9.453266</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Aristides and Marcus Cato</td>
+      <td>και δέ μεν ου γαρ</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αριστειδης δέ μεν ου</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.961498</td>
+      <td>9.493912</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Antony</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αντωνιος των κλεοπατρα</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.660641</td>
+      <td>10.182336</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Timoleon and Aemilius</td>
+      <td>και δέ ου το μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αιμιλιος τιμολεων διων</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.642203</td>
+      <td>9.534923</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Themistocles</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των θεμιστοκλης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.180822</td>
+      <td>9.302356</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caesar</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ καισαρ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.976924</td>
+      <td>10.549758</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Sulla</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και συλλας δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.736804</td>
+      <td>10.496770</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>greek_biographies</td>
+      <td>Lucian - Demonax</td>
+      <td>και δέ των εφη ου</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ εφη δημωναξ των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.050339</td>
+      <td>8.777257</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cato the Younger _Minor_</td>
+      <td>και δέ την κατων των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κατων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.651532</td>
+      <td>10.203874</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Agis and Cleomenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κλεομενης των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.616238</td>
+      <td>9.625628</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Dion</td>
+      <td>και δέ την των διων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και διων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.690165</td>
+      <td>9.645445</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Agis and Cleomenes and the Gracchi</td>
+      <td>και δέ μεν την των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κλεομενης μεν αγις</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.186561</td>
+      <td>9.933746</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Eumenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των ευμενης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.525972</td>
+      <td>9.703595</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Theseus and Romulus</td>
+      <td>και δέ μεν ου την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μεν ου την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.680244</td>
+      <td>8.412763</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Pelopidas and Marcellus</td>
+      <td>και δέ μεν των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ πελοπις μαρκελλος μαρκελλας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.119551</td>
+      <td>9.496599</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Dion and Brutus</td>
+      <td>και δέ ου μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και διων διοι δέ ου</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.282283</td>
+      <td>10.235883</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pelopidas</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των πελοπιδης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.293184</td>
+      <td>9.815161</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cicero</td>
+      <td>και δέ την των κικερων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κικερων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.194431</td>
+      <td>10.226483</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Fabius Maximus</td>
+      <td>και δέ την των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φαβιος δέ αννιβας την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.070648</td>
+      <td>8.749276</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>gospel_other</td>
+      <td>NA28-043JHN</td>
+      <td>λέγω ἰησοῦς εἶπον ἔρχομαι ἵνα</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>λέγω ἰησοῦς εἶπον ἔρχομαι ἵνα</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.772968</td>
+      <td>6.768660</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>gospel_other</td>
+      <td>NA28-042LUK</td>
+      <td>εἶπον λέγω πᾶς γίγνομαι θεός</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>εἶπον λέγω πᾶς γίγνομαι θεός</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.837115</td>
+      <td>6.717992</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>gospel_other</td>
+      <td>NA28-040MAT</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς ἄνθρωπος</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς ἄνθρωπος</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.870644</td>
+      <td>6.684308</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>gospel_other</td>
+      <td>NA28-044ACT</td>
+      <td>πᾶς θεός παῦλος γίγνομαι λέγω</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>πᾶς θεός παῦλος γίγνομαι λέγω</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.682744</td>
+      <td>6.867539</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>gospel_mark</td>
+      <td>NA28-041MRK</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω πᾶς ἵνα πολύς ἄνθρωπος γίγνομαι</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω</td>
+      <td>εὐθύς ἐπερωτάω κρατέω ἰάκωβος ἀκάθαρτος ἐκπορεύομαι εὐαγγέλιον περιβλέπω κηρύσσω καθεύδω</td>
+      <td>3.801561</td>
+      <td>6.788741</td>
+    </tr>
+  </tbody>
+</table>
 
-</code></pre>
+<h2 id="word-use_1">Word use</h2>
+<div>
+<!-- Include the HTML table here -->
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>work_id</th>
+      <th>text_name</th>
+      <th>top_frequency</th>
+      <th>top_frequency_in_work</th>
+      <th>top_tf-idf</th>
+      <th>top_ctf-idf</th>
+      <th>x_umap</th>
+      <th>y_umap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>greek_histeriographies</td>
+      <td>Cassius Dio - Historiae Romanae</td>
+      <td>και δέ μεν των την</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και μεν δέ των ες</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>1.971380</td>
+      <td>8.251590</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>greek_histeriographies</td>
+      <td>Diodorus Siculus - Bibliotheca Historica</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ των την μεν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.228156</td>
+      <td>9.609807</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Constitution of the</td>
+      <td>και δέ μεν των αν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ μεν των αν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.565268</td>
+      <td>8.392674</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>greek_histeriographies</td>
+      <td>Flavius Josephus - The Jewish War - De b</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ των την το</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>2.908830</td>
+      <td>9.804138</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>greek_histeriographies</td>
+      <td>Herodotus - The Histories</td>
+      <td>δέ και ες οι των</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ ες οι των</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.773692</td>
+      <td>8.171591</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Cyropaedia</td>
+      <td>και δέ μεν των οι</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ κυρος μεν εφη</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.276847</td>
+      <td>8.256951</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>greek_histeriographies</td>
+      <td>Polybius - Histories</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και των δέ την μεν</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.084472</td>
+      <td>9.645701</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>greek_histeriographies</td>
+      <td>Xenophon of Athens - Anabasis</td>
+      <td>και δέ οι μεν των</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ οι μεν των</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>0.470453</td>
+      <td>8.539720</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>greek_histeriographies</td>
+      <td>Dionysius of Halicarnassus - Antiquitate</td>
+      <td>και των δέ την τη</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και των δέ την τη</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>3.136983</td>
+      <td>9.054674</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>greek_histeriographies</td>
+      <td>Thucydides - The Peloponnesian War</td>
+      <td>και δέ των οι την</td>
+      <td>και δέ των την μεν το τη τους οι εν</td>
+      <td>και δέ ες των οι</td>
+      <td>αρισταγορης στασιαστης ποιευσι τεβεριος επβαλλω προειρημενος ιι απικομενος φερωρα ενεστωτων</td>
+      <td>1.097606</td>
+      <td>7.996009</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Testament of Job - Greek</td>
+      <td>και εν δέ την των</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εν ιωβ δέ την</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.899932</td>
+      <td>7.885679</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Testament of Abraham Recensi</td>
+      <td>και δέ αβρααμ την τη</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και αβρααμ αρχιστρατηγος δέ ισαακ</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.737897</td>
+      <td>7.697141</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Job</td>
+      <td>δέ και ου αυτου εν</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>δέ και ου αυτου ιωβ</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>0.569268</td>
+      <td>9.315145</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Tobias</td>
+      <td>και τη εν το αυτου</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ειπεν ραγουηλ ελεημοσυνη τη</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.815462</td>
+      <td>7.408936</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Jonas</td>
+      <td>και προς ιωνας την εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ιωνας νινευη κυριος προς</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.736570</td>
+      <td>7.364695</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Ruth</td>
+      <td>και ειπεν την αυτη εν</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και νωεμειν ειπεν βος πενθερα</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.852927</td>
+      <td>7.487990</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>jewish_texts</td>
+      <td>Anonymous - Joseph and Aseneth - Greek</td>
+      <td>και την τη αυτου εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και ιωσηφ ασενεθ ασενθ φαραω</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.485124</td>
+      <td>7.366481</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Judith</td>
+      <td>και εν αυτων τη εις</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εν αυτων ισραηλ τη</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>1.737822</td>
+      <td>7.261405</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>jewish_texts</td>
+      <td>Septuaginta - Esther</td>
+      <td>και εν τη δέ την</td>
+      <td>και δέ εν αυτου τη την ου εις το των</td>
+      <td>και εσθηρ αμαν μαρδοχαιος εν</td>
+      <td>ασενθ αρχιστρατηγος εσθηρ μαρδοχαιος φαραω ενωπιον ασενεθ αμαν ισραηλ ισαακ</td>
+      <td>2.168346</td>
+      <td>7.787876</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Prometheus Bound</td>
+      <td>και δʼ προμηθευς δέ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>προμηθευς και δʼ χορος ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.054860</td>
+      <td>7.084911</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Ichneutae</td>
+      <td>χορος και δʼ κυλληνη ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κυλληνη σιληνος χορος ημιχ και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-1.841074</td>
+      <td>7.123338</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Ion</td>
+      <td>δʼ ιων κρεουσα και ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κρεουσα ιων δʼ ξουθος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.557858</td>
+      <td>6.893657</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Heracleidae</td>
+      <td>ου και δʼ γαρ δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιολαος ου και δʼ γαρ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.211690</td>
+      <td>7.059419</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Electra</td>
+      <td>ηλεκτρα ου και γαρ δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ηλεκτρα ορεστης χρυσοθεμις ου και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.505439</td>
+      <td>7.910195</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Helen</td>
+      <td>δʼ ελενη δέ και ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ελενη μενελεως θεοκλυμενος δʼ δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.685262</td>
+      <td>7.090357</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Iphigenia in Tauris</td>
+      <td>δʼ ιφιγενεια και ορεστης ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιφιγενεια ορεστης δʼ και τʼ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.758184</td>
+      <td>7.690047</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Persians</td>
+      <td>δʼ και χορος δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος ξερξης δʼ και ατοσσα</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.713311</td>
+      <td>6.534083</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Orestes</td>
+      <td>ορεστης δʼ και γαρ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ορεστης ηλεκτρα μενελαος δʼ πυλαδης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.472203</td>
+      <td>7.821230</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Ajax</td>
+      <td>και γαρ ου δʼ αν</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>τεκμησσα αιας τευκρος και δʼ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.489811</td>
+      <td>6.759582</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Elektra</td>
+      <td>δʼ ηλεκτρα ορεστης και δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ηλεκτρα ορεστης δʼ και δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.653838</td>
+      <td>7.914687</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Herakles</td>
+      <td>δʼ και ου δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αμφιτρυων ηρακλης δʼ και θησευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.337785</td>
+      <td>7.348131</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Antigone</td>
+      <td>και δʼ γαρ ου κρεων</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κρεων και αντιγονη δʼ χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.893161</td>
+      <td>6.878755</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Eumenides</td>
+      <td>και δʼ χορος δέ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος και δʼ ορεστης δέ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.525463</td>
+      <td>7.203488</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Iphigenia in Aulis</td>
+      <td>δʼ και δέ ου κλυταιμηστρα</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κλυταιμηστρα αγαμεμνων δʼ ιφιγενεια αχιλλευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.647382</td>
+      <td>7.344020</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Medea</td>
+      <td>και ου γαρ μηδεια δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>μηδεια και αιγευς ου γαρ</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.402372</td>
+      <td>7.997343</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Trojan Women</td>
+      <td>δʼ και ου δέ εκαβη</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>εκαβη δʼ ανδρομαχη ταλθυβιος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.456320</td>
+      <td>6.630803</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Andromache</td>
+      <td>και ου δέ γαρ ως</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ανδρομαχη και πηλευς ερμιονη ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.710322</td>
+      <td>7.840944</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Suppliant Maidens</td>
+      <td>δʼ χορος και δέ βασιλευς</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>χορος δʼ και δαναος βασιλευς</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.084210</td>
+      <td>6.643611</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Rhesus</td>
+      <td>δʼ και ου εκτωρ γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>εκτωρ δʼ και χορος ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.593588</td>
+      <td>6.519217</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Libation Bearers</td>
+      <td>δʼ και χορος ορεστης δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ορεστης χορος δʼ ηλεκτρα και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.592932</td>
+      <td>7.742251</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Suppliants</td>
+      <td>δʼ και γαρ ου δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αδραστος θησευς δʼ και χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.401602</td>
+      <td>7.289791</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Philoctetes</td>
+      <td>νεοπτολεμος και ου φιλοκτητης δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>φιλοκτητης νεοπτολεμος οδυσσευς μʼ και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.347982</td>
+      <td>6.891404</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Oedipus at Colonus</td>
+      <td>οιδιπους και δʼ ου γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>οιδιπους αντιγονη δʼ χορος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.189797</td>
+      <td>7.072229</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Seven Against Thebes</td>
+      <td>δʼ και χορος πολις δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δʼ ετεοκλης χορος αντιγονη και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.997164</td>
+      <td>6.743244</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Bacchae</td>
+      <td>δʼ δέ και διονυσος ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>πενθευς διονυσος αγαυη δʼ καδμος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.215430</td>
+      <td>6.842129</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Oedipus King - Oedipus Tyran</td>
+      <td>οιδιπους και ου γαρ δʼ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>οιδιπους κρεων και δʼ ου</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.189798</td>
+      <td>7.124920</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Hippolytus</td>
+      <td>ου και γαρ δέ ιππολυτος</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>ιππολυτος φαιδρα θησευς ου και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.643332</td>
+      <td>7.900507</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Cyclops</td>
+      <td>κυκλωψ οδυσσευς και ου χορος</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>κυκλωψ οδυσσευς σιληνος χορος και</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-1.537344</td>
+      <td>7.259126</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - The Phoenician Women</td>
+      <td>δʼ και δέ ου γαρ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αντιγονη δʼ πολυνεικης κρεων ετεοκλης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-3.094698</td>
+      <td>6.993044</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>greek_tragedies</td>
+      <td>Sophocles - Trachiniae</td>
+      <td>και δʼ ου γαρ ως</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δηιανειρα υλλος λιχας δʼ ηρακλης</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.017552</td>
+      <td>6.783137</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>greek_tragedies</td>
+      <td>Euripides - Alcestis</td>
+      <td>και ου αδμητος γαρ δέ</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>αδμητος ηρακλης και ου χορος</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-0.906805</td>
+      <td>7.767218</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>greek_tragedies</td>
+      <td>Aeschylus - Agamemnon</td>
+      <td>δʼ και χορος δέ ου</td>
+      <td>και δʼ ου γαρ δέ χορος ως εν αν μεν</td>
+      <td>δʼ χορος και κλυταιμηστρα κασανδρα</td>
+      <td>κατθανειν τοισδʼ πυλαδη βιοτος λεγʼ ταλαινʼ τουσδʼ ειμʼ τεκμησσα τηδʼ</td>
+      <td>-2.351370</td>
+      <td>6.856865</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>greek_novels</td>
+      <td>Xenophon of Ephesus - Ephesiaca</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και ανθεια δέ αβροκομης την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.785381</td>
+      <td>9.246032</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>greek_novels</td>
+      <td>Chariton - De Chaerea et Callirhoe - Cha</td>
+      <td>και δέ την γαρ μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ καλλιρροη την γαρ</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.808147</td>
+      <td>8.973928</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>greek_novels</td>
+      <td>Longus - Daphnis and Chloe</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δαφνις χλοη δέ την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>1.917916</td>
+      <td>8.355626</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>greek_novels</td>
+      <td>Vitae Aesopi - Vita Aesopi Pl vel Accurs</td>
+      <td>και δέ την αισωπος των</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και αισωπος ξανθος δέ την</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>2.372628</td>
+      <td>8.448527</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>greek_novels</td>
+      <td>Heliodorus of Emesa - Aethiopica</td>
+      <td>και δέ την το μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ την χαρικλεια το</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>1.469301</td>
+      <td>8.046231</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>greek_novels</td>
+      <td>Achilles Tatius - Leucippe et Clitophon</td>
+      <td>και δέ την το μεν</td>
+      <td>και δέ την το μεν των τη γαρ ου εις</td>
+      <td>και δέ την το λευκιππη</td>
+      <td>οροονδατης σωσθενης ιπποθοος λαμων θισβη θεαγενει αβροκομη πολυχαρμος χαιρεαν ναυσικλης</td>
+      <td>0.470567</td>
+      <td>9.055362</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pompey</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ πομπηιος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.631492</td>
+      <td>10.505160</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Alcibiades</td>
+      <td>και δέ των την αλκιβιαδης</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αλκιβιαδης δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.752102</td>
+      <td>8.113016</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Sertorius</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ σερτωριος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.367721</td>
+      <td>10.538901</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lycurgus</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των την το</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.689690</td>
+      <td>9.067501</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Demosthenes and Cicero</td>
+      <td>και δέ μεν των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κικερων δημοσθενης δέ μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.117428</td>
+      <td>9.941002</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>greek_biographies</td>
+      <td>Soranus - Vita Hippocratis Secundum Soranum</td>
+      <td>και δέ το την εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ το ςωρανος την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.988979</td>
+      <td>9.279234</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Philopoemen</td>
+      <td>και δέ των την τους</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των φιλοποιμην την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.465224</td>
+      <td>9.572331</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pyrrhus</td>
+      <td>και δέ των την πυρρος</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και πυρρος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.102298</td>
+      <td>9.718687</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lycurgus and Numa</td>
+      <td>και δέ το των την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ το των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.939250</td>
+      <td>8.541154</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Demetrius and Antony</td>
+      <td>και δέ την μεν εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αντωνιος δημητριος δέ την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.377482</td>
+      <td>10.025807</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Romulus</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ ρωμυλος μεν την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.796548</td>
+      <td>8.800714</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>greek_biographies</td>
+      <td>Porphyry - Life of Pythagoras - Vita Pythagorae</td>
+      <td>και δέ των δʼ την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των δʼ πυθαγορας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.874249</td>
+      <td>8.840469</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Solon</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και σολων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.752228</td>
+      <td>9.020075</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Agesilaus</td>
+      <td>και δέ την των τη</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αγησιλαος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.376034</td>
+      <td>11.087979</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Demosthenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δημοσθενης δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.549344</td>
+      <td>8.803561</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Agesilaus and Pompey</td>
+      <td>και δέ μεν την ου</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αγησιλαος δέ πομπηιος μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.209841</td>
+      <td>10.994439</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Alexander</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των αλεξανδρος την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.858573</td>
+      <td>9.629587</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Artaxerxes</td>
+      <td>και δέ την μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κυρος την αρτοξερξης</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>0.619814</td>
+      <td>8.797957</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Publicola</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των την ποπλικολας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.360069</td>
+      <td>9.120136</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Tiberius and Caius Gracchus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ τιβεριος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.122164</td>
+      <td>8.901933</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Marcus Cato _Maior_</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κατων των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.917723</td>
+      <td>9.860676</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caius Marcius Coriolanus</td>
+      <td>και δέ την των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και μαρκιος δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.774165</td>
+      <td>8.400793</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Alcibiades and Coriolanus</td>
+      <td>και δέ ου την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αλκιβιαδης δέ ου μαρκιος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.684070</td>
+      <td>8.052103</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Demetrius</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ δημητριος την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.094119</td>
+      <td>9.545431</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>greek_biographies</td>
+      <td>Flavius Josephus - Life</td>
+      <td>και την δέ των εις</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και την δέ των ιωναθης</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.185554</td>
+      <td>10.005625</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lysander</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και λυσανδρος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.785949</td>
+      <td>10.888791</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Crassus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κρασσος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.396991</td>
+      <td>10.713048</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Numa</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.491654</td>
+      <td>8.925432</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Solon and Publicola</td>
+      <td>και δέ μεν των σολων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και σολων ποπλικολας δέ μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.850754</td>
+      <td>9.087798</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Camillus</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των καμιλλος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.873926</td>
+      <td>9.296648</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Lucullus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και λουκουλλος δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.515238</td>
+      <td>8.969564</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Timoleon</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και τιμολεων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.654553</td>
+      <td>9.456851</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Brutus</td>
+      <td>και δέ των μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και βρουτος δέ κασσιος των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.895313</td>
+      <td>10.196450</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Phocion</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φωκιων δέ φωκιοι την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.374973</td>
+      <td>9.143312</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Nicias and Crassus</td>
+      <td>και δέ την ου το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κρασσος δέ την νικιας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.330702</td>
+      <td>10.656568</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Marcellus</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μαρκελλος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.534426</td>
+      <td>9.410298</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Otho</td>
+      <td>και δέ των τους την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ οθων των τους</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.710037</td>
+      <td>9.327409</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Aemilius Paulus</td>
+      <td>και δέ την των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την των αιμιλιος</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.651573</td>
+      <td>9.773231</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lucullus and Cimon</td>
+      <td>και των μεν δέ την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κιμων λουκουλλος των μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.647188</td>
+      <td>8.783853</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Galba</td>
+      <td>και δέ την των εν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ γαλβας νερων την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.852372</td>
+      <td>10.474126</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Pericles and Fabius Maximus</td>
+      <td>και δέ φαβιος ου των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φαβιος περικλης περικλεους δέ</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.992214</td>
+      <td>8.433226</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Lysander and Sulla</td>
+      <td>και δέ την μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ λυσανδρος συλλας την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.765826</td>
+      <td>10.790769</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Theseus</td>
+      <td>και δέ την μεν των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ την μεν των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.384502</td>
+      <td>8.873258</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cimon</td>
+      <td>και δέ των την κιμων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κιμων δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.666044</td>
+      <td>8.783344</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>greek_biographies</td>
+      <td>Philo Judaeus - De vita Mosis _lib i-ii_</td>
+      <td>και των δέ την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και των δέ την μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.112536</td>
+      <td>8.078064</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pericles</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ περικλης των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.413101</td>
+      <td>8.516382</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Aratus</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αρατος δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.019628</td>
+      <td>9.273533</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Sertorius and Eumenes</td>
+      <td>και δέ μεν τω το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μεν τω την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.439680</td>
+      <td>10.252298</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caius Marius</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μαριος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.620123</td>
+      <td>10.390590</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Nicias</td>
+      <td>και δέ των την το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και νικιας δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.076368</td>
+      <td>8.181615</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Titus Flamininus</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ τιτος των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.327180</td>
+      <td>9.363402</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Philopoemen and Titus</td>
+      <td>και δέ μεν προς ελλην</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και τιτος δέ φιλοποιμενος μεν</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.426017</td>
+      <td>9.453266</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Aristides and Marcus Cato</td>
+      <td>και δέ μεν ου γαρ</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και αριστειδης δέ μεν ου</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.961498</td>
+      <td>9.493912</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Antony</td>
+      <td>και δέ των μεν την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αντωνιος των κλεοπατρα</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.660641</td>
+      <td>10.182336</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Timoleon and Aemilius</td>
+      <td>και δέ ου το μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ αιμιλιος τιμολεων διων</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.642203</td>
+      <td>9.534923</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Themistocles</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των θεμιστοκλης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.180822</td>
+      <td>9.302356</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Caesar</td>
+      <td>και δέ την των μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ καισαρ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.976924</td>
+      <td>10.549758</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Sulla</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και συλλας δέ των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.736804</td>
+      <td>10.496770</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>greek_biographies</td>
+      <td>Lucian - Demonax</td>
+      <td>και δέ των εφη ου</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ εφη δημωναξ των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.050339</td>
+      <td>8.777257</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cato the Younger _Minor_</td>
+      <td>και δέ την κατων των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κατων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.651532</td>
+      <td>10.203874</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Agis and Cleomenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κλεομενης των την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.616238</td>
+      <td>9.625628</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Dion</td>
+      <td>και δέ την των διων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και διων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.690165</td>
+      <td>9.645445</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Agis and Cleomenes and the Gracchi</td>
+      <td>και δέ μεν την των</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ κλεομενης μεν αγις</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.186561</td>
+      <td>9.933746</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Eumenes</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των ευμενης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.525972</td>
+      <td>9.703595</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Theseus and Romulus</td>
+      <td>και δέ μεν ου την</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ μεν ου την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>1.680244</td>
+      <td>8.412763</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Pelopidas and Marcellus</td>
+      <td>και δέ μεν των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ πελοπις μαρκελλος μαρκελλας</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.119551</td>
+      <td>9.496599</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Comparison of Dion and Brutus</td>
+      <td>και δέ ου μεν το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και διων διοι δέ ου</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.282283</td>
+      <td>10.235883</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Pelopidas</td>
+      <td>και δέ των την μεν</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και δέ των πελοπιδης την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.293184</td>
+      <td>9.815161</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Cicero</td>
+      <td>και δέ την των κικερων</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και κικερων δέ την των</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>2.194431</td>
+      <td>10.226483</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>greek_biographies</td>
+      <td>Plutarch - Fabius Maximus</td>
+      <td>και δέ την των το</td>
+      <td>και δέ των την μεν το ου εν τη τους</td>
+      <td>και φαβιος δέ αννιβας την</td>
+      <td>μωυσης κατλος οκταβιος συρακουσιους λευκολλος λουκουλλω ομαλως μαριω φωκιοι ατρεμα</td>
+      <td>3.070648</td>
+      <td>8.749276</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>gospel_other</td>
+      <td>NA28-043JHN</td>
+      <td>λέγω ἰησοῦς εἶπον ἔρχομαι ἵνα</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>λέγω ἰησοῦς εἶπον ἔρχομαι ἵνα</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.772968</td>
+      <td>6.768660</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>gospel_other</td>
+      <td>NA28-042LUK</td>
+      <td>εἶπον λέγω πᾶς γίγνομαι θεός</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>εἶπον λέγω πᾶς γίγνομαι θεός</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.837115</td>
+      <td>6.717992</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>gospel_other</td>
+      <td>NA28-040MAT</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς ἄνθρωπος</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς ἄνθρωπος</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.870644</td>
+      <td>6.684308</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>gospel_other</td>
+      <td>NA28-044ACT</td>
+      <td>πᾶς θεός παῦλος γίγνομαι λέγω</td>
+      <td>λέγω εἶπον ἰησοῦς πᾶς θεός ἔρχομαι γίγνομαι ποιέω κύριος ἄνθρωπος</td>
+      <td>πᾶς θεός παῦλος γίγνομαι λέγω</td>
+      <td>νόμος κρίνω μαρτυρέω ἰδού ὑπάρχω ἰεροσόλυμα φῶς πέμπω δοξάζω ἀβραάμ</td>
+      <td>3.682744</td>
+      <td>6.867539</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>gospel_mark</td>
+      <td>NA28-041MRK</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω πᾶς ἵνα πολύς ἄνθρωπος γίγνομαι</td>
+      <td>λέγω ἔρχομαι ἰησοῦς εἶπον ἔχω</td>
+      <td>εὐθύς ἐπερωτάω κρατέω ἰάκωβος ἀκάθαρτος ἐκπορεύομαι εὐαγγέλιον περιβλέπω κηρύσσω καθεύδω</td>
+      <td>3.801561</td>
+      <td>6.788741</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="phrases">Phrases</h2>
 
 
 
