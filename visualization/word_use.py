@@ -1,7 +1,7 @@
 from pathlib import Path
-
 import pandas as pd
 import plotly.express as px
+
 
 SHEET_URL = "https://docs.google.com/spreadsheets/d/15WIzk2aV3vCQLnDihdnNCLxMbDmJZiZKmuiM_xRKbwk/edit#gid=282554525"
 
@@ -21,6 +21,7 @@ def find_work(work_id: str, md: pd.DataFrame) -> str:
 
 
 data = pd.read_csv("results/word_use.csv")
+#data = pd.read_csv("/work/gospel-ancient-greek/gospel-ancient-greek/results/word_use.csv")
 md = fetch_metadata(SHEET_URL)
 #data["text"] = data["text_name"].map(lambda s: s.split(" - ")[1])
 data["text"] = data["text_name"]
@@ -42,22 +43,26 @@ fig = px.scatter(
     x="x_umap",
     y="y_umap",
     color="group",
-    text="text",
+    #text="text",
     hover_data={
+        "text_name": True,
         "top_tf-idf": True,
         "top_frequency": True,
         "x_umap": False,
         "y_umap": False,
         "group": False,
-        "text": False,
+        "text": True,
     },
-    hover_name="text_name",
+    #hover_name="text_name",
     template="plotly_white",
     height=1200,
     width=1000,
 )
+
+# Force the mode to markers so that no text is rendered directly.
+fig.update_traces(mode="markers", marker=dict(size=14, line=dict(width=2, color="black")))
 fig.update_layout(
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5)
 )
-fig.update_traces(marker=dict(size=14, line=dict(width=2, color="black")))
+
 fig.write_html(out_path)

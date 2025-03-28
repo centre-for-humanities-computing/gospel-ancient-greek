@@ -4,6 +4,7 @@ nav:
     - Home: index.md
     - Word Use and Phrases: word_use.md
     - Stylistic Features: style.md
+    - More Info: raw_data.md
 
 
 theme:
@@ -24,3 +25,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - search
+  - macros
