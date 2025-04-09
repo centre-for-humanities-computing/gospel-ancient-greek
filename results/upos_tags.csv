@@ -9,15 +9,15 @@ Unnamed: 0,adj,adp,adv,aux,cconj,det,intj,noun,num,part,pron,propn,punct,sconj,v
 7,5707,3449,8697,1310,3877,6976,102,7733,512,0,3374,1699,4318,1743,12038,Xenophon of Athens - Anabasis,greek_historiographies
 8,35786,22794,28071,3600,20048,46289,276,51050,1437,1,13949,5352,62997,3847,51814,Dionysius of Halicarnassus - Antiquitate,greek_historiographies
 9,18391,10353,19139,2354,12872,22632,58,19908,1364,0,6795,4930,19675,2782,26617,Thucydides - The Peloponnesian War,greek_historiographies
-10,589,596,930,173,648,1480,32,1673,136,0,1213,189,5751,207,2184,Anonymous - Testament of Job - Greek,jewish_texts
-11,517,451,500,59,586,1120,36,1239,55,0,602,185,513,140,1067,Anonymous - Testament of Abraham Recensi,jewish_texts
-12,902,961,1909,238,693,1172,30,2790,40,1,1694,159,2511,276,2545,Septuaginta - Job,jewish_texts
-13,212,363,301,66,566,818,12,943,40,0,692,229,1204,118,1013,Septuaginta - Tobias,jewish_texts
-14,46,112,38,11,130,149,3,200,6,0,127,38,100,17,194,Septuaginta - Jonas,jewish_texts
-15,56,143,146,29,221,263,10,299,13,0,260,60,445,42,370,Septuaginta - Ruth,jewish_texts
-16,447,551,289,158,1039,1327,42,1553,54,0,906,358,576,119,1149,Anonymous - Joseph and Aseneth - Greek,jewish_texts
-17,340,848,403,110,959,1553,14,1846,54,0,1079,374,1940,120,1304,Septuaginta - Judith,jewish_texts
-18,323,452,345,64,536,1109,8,1217,57,0,447,276,1237,60,917,Septuaginta - Esther,jewish_texts
+10,589,596,930,173,648,1480,32,1673,136,0,1213,189,5751,207,2184,Anonymous - Testament of Job - Greek,lxx_texts
+11,517,451,500,59,586,1120,36,1239,55,0,602,185,513,140,1067,Anonymous - Testament of Abraham Recensi,lxx_texts
+12,902,961,1909,238,693,1172,30,2790,40,1,1694,159,2511,276,2545,Septuaginta - Job,lxx_texts
+13,212,363,301,66,566,818,12,943,40,0,692,229,1204,118,1013,Septuaginta - Tobias,lxx_texts
+14,46,112,38,11,130,149,3,200,6,0,127,38,100,17,194,Septuaginta - Jonas,lxx_texts
+15,56,143,146,29,221,263,10,299,13,0,260,60,445,42,370,Septuaginta - Ruth,lxx_texts
+16,447,551,289,158,1039,1327,42,1553,54,0,906,358,576,119,1149,Anonymous - Joseph and Aseneth - Greek,lxx_texts
+17,340,848,403,110,959,1553,14,1846,54,0,1079,374,1940,120,1304,Septuaginta - Judith,lxx_texts
+18,323,452,345,64,536,1109,8,1217,57,0,447,276,1237,60,917,Septuaginta - Esther,lxx_texts
 19,871,406,926,56,245,313,75,1456,10,23,437,89,1741,120,1131,Aeschylus - Prometheus Bound,greek_tragedies
 20,142,93,275,25,74,111,22,344,15,27,155,48,699,48,293,Sophocles - Ichneutae,greek_tragedies
 21,1169,650,1517,111,302,501,132,2417,21,15,607,204,2973,303,1905,Euripides - Ion,greek_tragedies
