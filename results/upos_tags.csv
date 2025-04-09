@@ -1,14 +1,14 @@
-,adj,adp,adv,aux,cconj,det,intj,noun,num,part,pron,propn,punct,sconj,verb,text_name,work_id
-0,19495,14216,30370,1577,19301,29800,73,21517,583,55,10915,5961,45391,3722,33871,Cassius Dio - Historiae Romanae,greek_histeriographies
-1,19015,16216,20346,1424,8425,35517,21,33929,2100,0,3788,8360,36302,1080,32814,Diodorus Siculus - Bibliotheca Historica,greek_histeriographies
-2,644,279,969,81,277,655,1,695,16,0,149,51,797,129,981,Xenophon of Athens - Constitution of the,greek_histeriographies
-3,13172,10504,15583,1405,7959,20397,28,22415,1058,0,4727,4567,24532,1197,22319,Flavius Josephus - The Jewish War - De b,greek_histeriographies
-4,20034,12470,25377,3720,10400,26280,175,28920,1580,0,9767,9580,11060,3051,33608,Herodotus - The Histories,greek_histeriographies
-5,9019,4019,14267,1477,5090,9297,478,8700,251,3,5687,1567,5593,2421,17082,Xenophon of Athens - Cyropaedia,greek_histeriographies
-6,32087,31063,39691,3107,16781,60817,119,49923,2238,18,9685,11473,58288,3021,52502,Polybius - Histories,greek_histeriographies
-7,5707,3449,8697,1310,3877,6976,102,7733,512,0,3374,1699,4318,1743,12038,Xenophon of Athens - Anabasis,greek_histeriographies
-8,35786,22794,28071,3600,20048,46289,276,51050,1437,1,13949,5352,62997,3847,51814,Dionysius of Halicarnassus - Antiquitate,greek_histeriographies
-9,18391,10353,19139,2354,12872,22632,58,19908,1364,0,6795,4930,19675,2782,26617,Thucydides - The Peloponnesian War,greek_histeriographies
+Unnamed: 0,adj,adp,adv,aux,cconj,det,intj,noun,num,part,pron,propn,punct,sconj,verb,text_name,work_id
+0,19495,14216,30370,1577,19301,29800,73,21517,583,55,10915,5961,45391,3722,33871,Cassius Dio - Historiae Romanae,greek_historiographies
+1,19015,16216,20346,1424,8425,35517,21,33929,2100,0,3788,8360,36302,1080,32814,Diodorus Siculus - Bibliotheca Historica,greek_historiographies
+2,644,279,969,81,277,655,1,695,16,0,149,51,797,129,981,Xenophon of Athens - Constitution of the,greek_historiographies
+3,13172,10504,15583,1405,7959,20397,28,22415,1058,0,4727,4567,24532,1197,22319,Flavius Josephus - The Jewish War - De b,greek_historiographies
+4,20034,12470,25377,3720,10400,26280,175,28920,1580,0,9767,9580,11060,3051,33608,Herodotus - The Histories,greek_historiographies
+5,9019,4019,14267,1477,5090,9297,478,8700,251,3,5687,1567,5593,2421,17082,Xenophon of Athens - Cyropaedia,greek_historiographies
+6,32087,31063,39691,3107,16781,60817,119,49923,2238,18,9685,11473,58288,3021,52502,Polybius - Histories,greek_historiographies
+7,5707,3449,8697,1310,3877,6976,102,7733,512,0,3374,1699,4318,1743,12038,Xenophon of Athens - Anabasis,greek_historiographies
+8,35786,22794,28071,3600,20048,46289,276,51050,1437,1,13949,5352,62997,3847,51814,Dionysius of Halicarnassus - Antiquitate,greek_historiographies
+9,18391,10353,19139,2354,12872,22632,58,19908,1364,0,6795,4930,19675,2782,26617,Thucydides - The Peloponnesian War,greek_historiographies
 10,589,596,930,173,648,1480,32,1673,136,0,1213,189,5751,207,2184,Anonymous - Testament of Job - Greek,jewish_texts
 11,517,451,500,59,586,1120,36,1239,55,0,602,185,513,140,1067,Anonymous - Testament of Abraham Recensi,jewish_texts
 12,902,961,1909,238,693,1172,30,2790,40,1,1694,159,2511,276,2545,Septuaginta - Job,jewish_texts
