@@ -28,10 +28,12 @@ data["text"] = data["text_name"]
 #data["work"] = data["work_id"].map(lambda id: find_work(id, md))
 data["work"] = data["work_id"]
 data["group"] = (
-    data["work"]
-    + " <br> <b>top c-tf-idf</b>: <i>"
+    "<b>"
+    + data["work"]
+    + "</b>"
+    + " <br> top c-tf-idf: <i>"
     + data["top_ctf-idf"]
-    + "</i> <br> <b>top freq: </b><i>"
+    + "</i> <br> top freq: <i>"
     + data["top_frequency_in_work"]
 )
 
