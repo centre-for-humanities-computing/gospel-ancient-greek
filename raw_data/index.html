@@ -405,7 +405,7 @@
 
 <h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
 <p><em>File</em>: <code>raw_data.md</code></p>
-<p><em>TemplateNotFound</em>: 'data/results/word_use.csv' not found in search path: '/work/gospel-ancient-greek/gospel-ancient-greek/docs'</p>
+<p><em>UndefinedError</em>: 'read_csv' is undefined</p>
 <pre><code>Traceback (most recent call last):
   File &quot;/home/ucloud/.local/lib/python3.12/site-packages/mkdocs_macros/plugin.py&quot;, line 688, in render
     return md_template.render(**page_variables)
@@ -414,10 +414,11 @@
     self.environment.handle_exception()
   File &quot;/home/ucloud/.local/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 942, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 8, in top-level template code
-  File &quot;/home/ucloud/.local/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 209, in get_source
-    raise TemplateNotFound(
-jinja2.exceptions.TemplateNotFound: 'data/results/word_use.csv' not found in search path: '/work/gospel-ancient-greek/gospel-ancient-greek/docs'
+  File &quot;&lt;template&gt;&quot;, line 4, in top-level template code
+  File &quot;/home/ucloud/.local/lib/python3.12/site-packages/jinja2/utils.py&quot;, line 92, in from_obj
+    if hasattr(obj, &quot;jinja_pass_arg&quot;):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'read_csv' is undefined
 
 </code></pre>
 
