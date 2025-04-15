@@ -60,5 +60,5 @@ The length of texts (number of tokens), average length of tokens and mean senten
 
 <figure>
 <iframe src="../_static/lengths_3d.html" width="2450px" height="1050px"></iframe>
-<figcaption>Total number of words (length), number of unique words (n_types), and number of unique lemmata (n_lemmata) in all Fables per Group</figcaption>
+<figcaption>Total number of words (length), number of unique words (n_types), and number of unique lemmata (n_lemmata) in all Texts per Group</figcaption>
 </figure>
