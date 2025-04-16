@@ -22,7 +22,7 @@ UPOS tags were tallied up in all texts without removal of any stop words or lemm
 
 <figure>
 <iframe src="../_static/upos_scatter_matrix_3d.html" width="2450px" height="1050px"></iframe>
-<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Fables</figcaption>
+<figcaption>Relative Frequencies of Nouns, Verbs and Adjectives in all Texts</figcaption>
 </figure>
 
 <figure>
