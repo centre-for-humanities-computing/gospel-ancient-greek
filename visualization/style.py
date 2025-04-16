@@ -21,23 +21,22 @@ def find_work(work_id: str, md: pd.DataFrame) -> str:
     md = md[md["document_id"].str.contains(work_id)]
     return md["work"].iloc[0]
 
+dat_path = Path("/work/gospel-ancient-greek/gospel-ancient-greek/data/results")
+data = pd.read_csv(dat_path.joinpath("stylistic_features.csv"))
 
-data = pd.read_csv("results/stylistic_features.csv")
-md = fetch_metadata(SHEET_URL)
+# md = fetch_metadata(SHEET_URL)
 #data["text"] = data["text_name"].map(lambda s: s.split(" - ")[1])
-data["text"] = data["text_name"]
 #data["work"] = data["work_id"].map(lambda id: find_work(id, md))
-data["work"] = data["work_id"]
 
 out_path = Path("docs/_static/vocabulary_richness.html")
 out_path.parent.mkdir(exist_ok=True, parents=True)
 fig = make_subplots(
-    rows=4, cols=1, subplot_titles=["Overall TTR", "MATTR-10", "MATTR-50", "MATTR-500"]
+    rows=6, cols=1, subplot_titles=["Overall TTR", "MATTR-10", "MATTR-50", "MATTR-500", "MATTR-1000", "MATTR-2500"]
 )
 unique_works = data["work"].unique()
 colors = px.colors.qualitative.Pastel
 work_to_color = dict(zip(unique_works, colors))
-for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50", "mattr_500"]):
+for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50", "mattr_500", "mattr_1000", "mattr_2500"]):
     row = i_feature + 1
     for work, color in work_to_color.items():
         subset = data[data["work"] == work]
@@ -47,8 +46,8 @@ for i_feature, feature in enumerate(["ttr", "mattr_10", "mattr_50", "mattr_500"]
             legendgroup=work,
             showlegend=row == 1,
             boxpoints="all",
-            text=subset["text"],
-            hovertemplate="<b>%{text}",
+            text=subset["text_name"],
+            hovertemplate="<b>%{text_name}",
             marker=dict(color=color),
         )
         fig.add_trace(trace, row=row, col=1)
@@ -63,4 +62,95 @@ fig = px.scatter_matrix(
     color="work",
 )
 out_path = Path("docs/_static/length_scatter_matrix.html")
+fig.write_html(out_path)
+
+# 3D plot for lengths
+fig = px.scatter_3d(
+    data,
+    x="length", y = "n_types", z = "n_lemmata",
+    hover_name="text_name",
+    color="work",
+)
+fig.update_layout(legend=dict(
+    y=-0.3,
+    xanchor="left",
+    x=0
+))
+out_path = Path("docs/_static/lengths_3d.html")
+fig.write_html(out_path)
+
+
+fig = px.scatter_matrix(
+    data,
+    dimensions=["length", "mean_sentence_length", "mean_token_length", "n_sentences", "mean_kai_length"],
+    hover_name="text_name",
+    color="work",
+)
+fig.update_layout(legend=dict(
+    y=-0.3,
+    xanchor="left",
+    x=0
+))
+out_path = Path("docs/_static/length_scatter_matrix.html")
+fig.write_html(out_path)
+
+fig = px.scatter_matrix(
+    data,
+    dimensions=["length", "n_kai"],
+    hover_name="text_name",
+    color="work",
+)
+out_path = Path("docs/_static/length_kai_matrix.html")
+fig.write_html(out_path)
+
+out_path = Path("docs/_static/kai_richness.html")
+out_path.parent.mkdir(exist_ok=True, parents=True)
+fig = make_subplots(
+    rows=3, cols=1, subplot_titles=["Overall KTR", "MAKTR-500", "MAKTR-1000"]
+)
+unique_works = data["work"].unique()
+colors = px.colors.qualitative.Pastel
+work_to_color = dict(zip(unique_works, colors))
+for i_feature, feature in enumerate(["kai_token_ratio", "maktr_500", "maktr_1000"]):
+    row = i_feature + 1
+    for work, color in work_to_color.items():
+        subset = data[data["work"] == work]
+        trace = go.Box(
+            x=subset[feature],
+            name=work,
+            legendgroup=work,
+            showlegend=row == 1,
+            boxpoints="all",
+            text=subset["text_name"],
+            hovertemplate="<b>%{text}",
+            marker=dict(color=color),
+        )
+        fig.add_trace(trace, row=row, col=1)
+fig.update_layout(template="plotly_white", width=1200, height=1000)
+fig.update_yaxes(visible=False)
+fig.write_html(out_path)
+
+fig = px.scatter(
+    data,
+    x="punct_count",
+    y ="kai_after_punct_count",
+    hover_name="text_name",
+    color="work",
+)
+out_path = Path("docs/_static/kai_punct_scatter.html")
+fig.write_html(out_path)
+
+# Meaning words
+fig = px.scatter_3d(
+    data.reset_index(),
+    x="length", y = "mean_sentence_length", z = "mean_token_length",
+    hover_name="text_name",
+    color="work",
+)
+fig.update_layout(legend=dict(
+    y=-0.3,
+    xanchor="left",
+    x=0
+))
+out_path = Path("docs/_static/length_scatter_matrix_3d.html")
 fig.write_html(out_path)
