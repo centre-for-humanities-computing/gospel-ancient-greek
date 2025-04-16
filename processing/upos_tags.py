@@ -6,23 +6,19 @@ import pandas as pd
 import spacy
 from sklearn.feature_extraction.text import CountVectorizer
 from spacy.tokens import Doc
+from tqdm import tqdm 
 
 nlp = spacy.load("grc_odycy_joint_trf")
 
 
-def load_works() -> list[dict]:
-    works = glob.glob("data/spacy_objects/*")
-    works = map(Path, works)
-    works = [work for work in works if work.is_dir()]
+def load_files(dat_path) -> list[dict]:
+    files = list(dat_path.rglob("*.spacy"))
     records = []
-    for work in works:
-        work_id = work.stem
-        files = glob.glob(str(work.joinpath("*.spacy")))
-        files = map(Path, files)
-        for file in files:
-            text_name = file.stem
-            doc = Doc(nlp.vocab).from_disk(file)
-            records.append(dict(work_id=work_id, text_name=text_name, doc=doc))
+    for file in tqdm(files):
+        text_name = file.stem
+        doc = Doc(nlp.vocab).from_disk(file)
+        work = str(file.parent).split("/")[-1]
+        records.append(dict(text_name=text_name, doc=doc, work=work))
     return records
 
 
@@ -32,7 +28,9 @@ def top_freq_group(
     unique_labels = np.unique(labels)
     res = {}
     for label in unique_labels:
-        freq = np.squeeze(np.asarray(doc_term_matrix[labels == label].sum(axis=0)))
+        mask = (labels == label).values  # if labels is a pandas Series
+        freq = np.squeeze(np.asarray(doc_term_matrix[mask].sum(axis=0)))
+        # freq = np.squeeze(np.asarray(doc_term_matrix[labels == label].sum(axis=0)))
         rel_freq = freq / freq.sum()
         high = np.argpartition(-freq, top_k)[:top_k]
         importance = freq[high]
@@ -50,12 +48,14 @@ def extract_upos(doc: Doc) -> str:
             tags.append(tok.pos_)
     return " ".join(tags)
 
+dat_path = Path("/work/gospel-ancient-greek/gospel-ancient-greek/data/")
 
-out_path = Path("results/upos_tags.csv")
-out_path.parent.mkdir(exist_ok=True)
+out_path = dat_path.joinpath("results/upos_tags.csv")
+out_path.parent.mkdir(exist_ok=True, parents=True)
+
 
 print("Loading data.")
-data = pd.DataFrame(load_works())
+data = pd.DataFrame(load_files(dat_path))
 
 print("Extracting UPOS tags.")
 upos_docs = data["doc"].map(
@@ -70,7 +70,7 @@ upos_vocab = vectorizer.get_feature_names_out()
 print("Saving UPOS frequencies")
 freq_df = pd.DataFrame(upos_vecs, columns=upos_vocab)
 freq_df["text_name"] = data["text_name"]
-freq_df["work_id"] = data["work_id"]
+freq_df["work"] = data["work"]
 freq_df.to_csv(out_path)
 
 print("Collecting UPOS n-grams")
@@ -79,10 +79,11 @@ upos_ngrams = n_gram_vectorizer.fit_transform(upos_docs)
 ngram_vocab = n_gram_vectorizer.get_feature_names_out()
 
 print("Calculating top n-gram patterns.")
-top_freq_per_class = top_freq_group(data["work_id"], upos_ngrams, ngram_vocab)
+top_freq_per_class = top_freq_group(data["work"], upos_ngrams, ngram_vocab)
 
 print("Saving results")
-out_path = Path("results/upos_patterns.csv")
+out_path = dat_path.joinpath("results/upos_patterns.csv")
+
 res = pd.DataFrame(top_freq_per_class)
 res.to_csv(out_path)
 
@@ -94,10 +95,11 @@ upos_ngrams = n_gram_vectorizer.fit_transform(upos_docs)
 ngram_vocab = n_gram_vectorizer.get_feature_names_out()
 
 print("Calculating top n-gram patterns.")
-top_freq_per_class = top_freq_group(data["work_id"], upos_ngrams, ngram_vocab)
+top_freq_per_class = top_freq_group(data["work"], upos_ngrams, ngram_vocab)
 
 print("Saving results")
-out_path = Path("results/upos_patterns_4.csv")
+out_path = dat_path.joinpath("results/upos_patterns_4.csv")
+
 res = pd.DataFrame(top_freq_per_class)
 res.to_csv(out_path)
 

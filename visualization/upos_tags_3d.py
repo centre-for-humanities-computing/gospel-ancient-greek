@@ -1,7 +1,10 @@
 from ast import literal_eval
+from functools import partial
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objects as go
 
 SHEET_URL = "https://docs.google.com/spreadsheets/d/15WIzk2aV3vCQLnDihdnNCLxMbDmJZiZKmuiM_xRKbwk/edit#gid=282554525"
@@ -26,34 +29,30 @@ def wrap_text(text: str) -> str:
         text = "<br>".join(text.split())
     return "<b>" + text
 
+
+print("Producing UPOS frequency visualizations in 3D.")
 dat_path = Path("/work/gospel-ancient-greek/gospel-ancient-greek/data")
 
-data = pd.read_csv(dat_path.joinpath("results/phrases.csv"),index_col=0)
+data = pd.read_csv(dat_path.joinpath("results/upos_tags.csv"),index_col=0)
+
 # md = fetch_metadata(SHEET_URL)
-#data.columns = [find_work(work_id, md) for work_id in data.columns]
-z = data.applymap(lambda elem: literal_eval(elem)[1])
-data = data.applymap(lambda elem: literal_eval(elem)[0])
-data = data.applymap(wrap_text)
-
-trace = go.Heatmap(
-    z=z,
-    text=data,
-    texttemplate="%{text}",
-    textfont=dict(size=14),
-    x=data.columns,
-    y=data.index,
-    colorbar=dict(title="Number of occurrences"),
+# data["work_name"] = data["work_id"].map(partial(find_work, md=md))
+data = data.set_index(["work", "text_name"])
+freq = data.to_numpy()
+rel_freq = pd.DataFrame(
+    (freq.T / freq.sum(axis=1)).T, columns=data.columns, index=data.index
 )
-fig = go.Figure(
-    data=trace,
+# Meaning words
+fig = px.scatter_3d(
+    rel_freq.reset_index(),
+    x="noun", y = "adj", z = "verb",
+    hover_name="text_name",
+    color="work",
 )
-fig = fig.update_layout(
-    width=1000,
-    height=1400,
-)
-fig = fig.update_yaxes(autorange="reversed")
-
-out_path = Path("docs/_static/phrases.html")
-out_path.parent.mkdir(exist_ok=True, parents=True)
-
+fig.update_layout(legend=dict(
+    y=-0.3,
+    xanchor="left",
+    x=0
+))
+out_path = Path("docs/_static/upos_scatter_matrix_3d.html")
 fig.write_html(out_path)

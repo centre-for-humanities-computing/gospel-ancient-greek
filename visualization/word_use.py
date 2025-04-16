@@ -19,14 +19,14 @@ def find_work(work_id: str, md: pd.DataFrame) -> str:
     md = md[md["document_id"].str.contains(work_id)]
     return md["work"].iloc[0]
 
-
-data = pd.read_csv("results/word_use.csv")
+dat_path = Path("/work/gospel-ancient-greek/gospel-ancient-greek/data/")
+data = pd.read_csv(dat_path.joinpath("results/word_use.csv"))
 #data = pd.read_csv("/work/gospel-ancient-greek/gospel-ancient-greek/results/word_use.csv")
-md = fetch_metadata(SHEET_URL)
+# md = fetch_metadata(SHEET_URL)
 #data["text"] = data["text_name"].map(lambda s: s.split(" - ")[1])
 data["text"] = data["text_name"]
 #data["work"] = data["work_id"].map(lambda id: find_work(id, md))
-data["work"] = data["work_id"]
+# data["work"] = data["work_id"]
 data["group"] = (
     "<b>"
     + data["work"]

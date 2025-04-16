@@ -18,14 +18,20 @@ def iterate_fables(file_path: Path) -> Iterable[tuple[str, str]]:
             yield fable_name, fable_text
 
 
-out_path = Path("data/spacy_objects")
-out_path.mkdir(exist_ok=True, parents=True)
 
-files = glob("data/raw_single_file/*/*.txt")
-files = [Path(file) for file in files]
+
+dat_path = Path("/work/text_reuse/raw_single_file/")
+files = list(dat_path.rglob("*.txt"))
+
 for file in tqdm(files, desc="Going through all texts."):
     file_id = file.stem
+    group = str(file.parent).split("/")[-1]
+
+    out_path = Path(f"/work/gospel-ancient-greek/gospel-ancient-greek/data/spacy_objects/{group}/")
+    out_path.mkdir(exist_ok=True, parents=True)
+
     out_file_path = out_path.joinpath(f"{file_id}.spacy")
+
     if not out_file_path.is_file():
         with open(file) as in_file:
             doc_content = in_file.read()
