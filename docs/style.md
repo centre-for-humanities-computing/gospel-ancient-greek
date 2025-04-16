@@ -11,6 +11,26 @@ The vocabulary richness of each text was calculated on the lemmatized work both 
 <figcaption>Use of Terms on a Group and Individual Level</figcaption>
 </figure>
 
+## Vocabulary Richness (Noun, Adj, Verb) 
+
+The vocabulary richness of each text was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 500 and 1000.
+
+<figure>
+<iframe src="../_static/vocabulary_richness_noun_adj_verb.html" width="2450px" height="1050px"></iframe>
+<figcaption>Use of Terms on a Group and Individual Level</figcaption>
+</figure>
+
+## Vocabulary Richness (Others) 
+
+The vocabulary richness of each text was calculated on the lemmatized work both with vanilla type-token ratio, but also with moving windows of size 500 and 1000. POS-tags used were
+ADV, INTJ, ADP, CCONJ, SCONJ, DET, PART, and PRON.
+
+<figure>
+<iframe src="../_static/vocabulary_richness_adv_intj_adp_cconj_sconj_det_part_pron.html" width="2450px" height="1050px"></iframe>
+<figcaption>Use of Terms on a Group and Individual Level</figcaption>
+</figure>
+
+
 ## UPOS Tags
 
 UPOS tags were tallied up in all texts without removal of any stop words or lemmatization.
@@ -35,7 +55,7 @@ UPOS tags were tallied up in all texts without removal of any stop words or lemm
 <figcaption>Wave Plot of UPOS Tag Distributions</figcaption>
 </figure>
 
-The most frequent 2 to 4-grams of UPOS tags were also counted for each work.
+The most frequent 2 to 3-grams of UPOS tags were also counted for each work.
 
 <figure>
 <iframe src="../_static/upos_patterns.html" width="2450px" height="1400px"></iframe>
